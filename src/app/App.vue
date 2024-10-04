@@ -1,5 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import HeaderBase from "@/components/HeaderBase";
+</script>
 
 <template>
-  <h1>hello world</h1>
+  <HeaderBase />
 </template>
