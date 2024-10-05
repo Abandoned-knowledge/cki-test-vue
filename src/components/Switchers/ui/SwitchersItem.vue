@@ -9,7 +9,7 @@
 <template>
   <input
     type="checkbox"
-    class="appearance-none w-6 aspect-square border-[3px] border-black checked:bg-black cursor-pointer"
+    class="aspect-square w-6 cursor-pointer appearance-none border-[3px] border-black checked:bg-black"
     :checked="props.checked"
   />
 </template>
