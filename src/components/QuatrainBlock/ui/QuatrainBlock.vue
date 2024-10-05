@@ -1,11 +1,14 @@
 <script setup lang="ts">
+  import Switchers from "@/components/Switchers";
   import { usePoemStore } from "@/shared/stores";
+
   const poemStore = usePoemStore();
 </script>
 
 <template>
   <div class="flex justify-center mt-10">
-    <div class="flex flex-col gap-10">
+    <div class="flex flex-col gap-5 md:gap-10 relative">
+      <Switchers class="md:absolute md:-left-[50%] md:top-0 justify-center md:justify-start" />
       <div
         class="quatrain"
         v-for="quatrain in poemStore.quatrains"
