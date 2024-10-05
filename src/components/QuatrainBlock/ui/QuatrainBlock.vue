@@ -7,7 +7,7 @@
 
 <template>
   <div class="mt-10 flex justify-center">
-    <div class="relative flex flex-col gap-5 md:gap-10">
+    <div class="relative flex w-[400px] flex-col gap-5 md:gap-10">
       <Switchers class="justify-center md:absolute md:-left-[50%] md:top-0 md:justify-start" />
       <div
         class="quatrain"
