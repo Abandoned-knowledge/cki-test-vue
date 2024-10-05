@@ -4,12 +4,13 @@
 </script>
 
 <template>
-  <main class="container flex justify-center mt-10">
+  <div class="flex justify-center mt-10">
     <div class="flex flex-col gap-10">
       <div
         class="quatrain"
         v-for="quatrain in poemStore.quatrains"
         :key="quatrain.id"
+        :id="`quatrain-${quatrain.id}`"
       >
         <p
           v-for="line in quatrain.quatrain"
@@ -19,11 +20,14 @@
         </p>
       </div>
     </div>
-  </main>
+  </div>
 </template>
 
 <style lang="css" scoped>
   .quatrain {
+    &.quatrain_hide {
+      @apply hidden;
+    }
     p {
       @apply text-xl;
     }
